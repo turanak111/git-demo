@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziyaretçi Defteri · Git Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="kart">
+    <header>
+      <p class="etiket">İleri Web Programlama · Git Demo</p>
+        <button id="tema" class="tema" type="button">Karanlık mod</button>
+      <h1>Ziyaretçi Defteri</h1>
+      <p class="aciklama">Bu sayfa her <code>git push</code> sonrasında GitHub Actions ile otomatik yayınlanır.</p>
+    </header>
+
+    <form id="form">
+      <input id="isim" type="text" placeholder="Adın" maxlength="40" required>
+      <input id="mesaj" type="text" placeholder="Kısa bir mesaj" maxlength="120" required>
+      <button type="submit">Ekle</button>
+    </form>
+
+    <ul id="liste"></ul>
+
+    <footer>
+      <span>Sürüm <strong>v1.1</strong></span>
+      <span id="sayac"></span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

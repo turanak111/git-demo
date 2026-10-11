@@ -1,0 +1,8 @@
+# İşletim sistemi ve editör dosyaları
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Bağımlılıklar ve gizli bilgiler (depoya asla girmemeli)
+node_modules/
+.env

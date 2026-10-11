@@ -1,0 +1,128 @@
+:root {
+  --arkaplan: #f6f5f1;
+  --kart: #ffffff;
+  --yazi: #1b1f27;
+  --soluk: #5b6270;
+  --cizgi: #e2dfd6;
+  --vurgu: #f05033;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--arkaplan);
+  color: var(--yazi);
+  transition: background 0.3s, color 0.3s;
+}
+
+.kart {
+  width: 100%;
+  max-width: 560px;
+  background: var(--kart);
+  border: 1px solid var(--cizgi);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.etiket {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vurgu);
+}
+
+h1 { margin: 8px 0; font-size: 32px; }
+
+.aciklama { margin: 0 0 24px; color: var(--soluk); line-height: 1.5; }
+
+code {
+  font-family: ui-monospace, Consolas, monospace;
+  background: var(--arkaplan);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+form { display: flex; flex-wrap: wrap; gap: 8px; }
+
+input {
+  flex: 1 1 160px;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--yazi);
+  background: var(--arkaplan);
+  border: 1px solid var(--cizgi);
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--vurgu);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover { filter: brightness(0.95); }
+
+#liste { list-style: none; margin: 24px 0 0; padding: 0; }
+
+#liste li {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--cizgi);
+}
+
+#liste li strong { display: block; }
+#liste li span { color: var(--soluk); }
+
+#liste li button {
+  padding: 4px 10px;
+  font-size: 13px;
+  color: var(--soluk);
+  background: transparent;
+  border: 1px solid var(--cizgi);
+}
+
+.bos { color: var(--soluk); font-style: italic; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--soluk);
+}
+
+body.karanlik {
+  --arkaplan: #14181f;
+  --kart: #1e232c;
+  --yazi: #f2efe8;
+  --soluk: #9aa3b0;
+  --cizgi: #2e3440;
+}
+
+.tema {
+  float: right;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: var(--yazi);
+  background: var(--arkaplan);
+  border: 1px solid var(--cizgi);
+}
+
+

@@ -1,0 +1,20 @@
+# Her Pull Request'te basit bir kontrol çalıştırır; PR sayfasında yeşil tik olarak görünür.
+name: HTML kontrol
+
+on:
+  pull_request:
+
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerekli dosyalar var mı?
+        run: |
+          test -f site/index.html
+          test -f site/style.css
+          test -f site/app.js
+      - name: Sayfanın başlığı var mı?
+        run: grep -q "<title>" site/index.html
+      - name: JavaScript sözdizimi doğru mu?
+        run: node --check site/app.js

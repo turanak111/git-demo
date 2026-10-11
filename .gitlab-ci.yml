@@ -1,0 +1,14 @@
+# GitLab'de aynı siteyi GitLab Pages ile yayınlar.
+# GitLab Pages, "public" klasöründeki dosyaları yayınlar.
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp -r site/* public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
