@@ -108,21 +108,6 @@ footer {
   color: var(--soluk);
 }
 
-body.karanlik {
-  --arkaplan: #14181f;
-  --kart: #1e232c;
-  --yazi: #f2efe8;
-  --soluk: #9aa3b0;
-  --cizgi: #2e3440;
-}
 
-.tema {
-  float: right;
-  padding: 6px 12px;
-  font-size: 13px;
-  color: var(--yazi);
-  background: var(--arkaplan);
-  border: 1px solid var(--cizgi);
-}
 
 

@@ -73,7 +73,3 @@ form.addEventListener("submit", (olay) => {
 });
 
 goster();
-
-document.getElementById("tema").addEventListener("click", () => {
-  document.body.classList.toggle("karanlik");
-});
